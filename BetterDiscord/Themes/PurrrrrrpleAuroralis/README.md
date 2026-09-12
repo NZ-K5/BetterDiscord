@@ -9,7 +9,7 @@ Current version: v1.0.0 (2026/09/12)
 Vencord link
 
 ```
-https://nz-k5.github.com/BetterDiscord/Themes/PurrrrrrpleAuroralis/css/source.css
+https://github.com/NZ-K5/BetterDiscord/blob/main/BetterDiscord/Themes/PurrrrrrpleAuroralis/css/source.css
 ```
 
 ## Variables
