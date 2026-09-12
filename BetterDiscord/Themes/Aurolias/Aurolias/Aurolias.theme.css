@@ -1,0 +1,85 @@
+/**
+ * @name AuroliasGlowyBlue
+ * @version 1.1
+ * @description Dark glowy blue, slightly bright, glassy Auroralis theme.
+ * @author NZ- Aka NIGHTFALL.js
+ *
+ * @website https://github.com/NZ-K5
+ * @source https://github.com/NZ-K5/BetterDiscord/blob/main/BetterDiscord/Themes/Aurolias/Aurolias/Aurolias.theme.css
+ * @invite https://discord.gg/YwWUEjYYWc
+ */
+
+@import url(https://github.com/NZ-K5/BetterDiscord/main/BetterDiscord/Themes/Aureulious/Aureulious/Aureulious.theme.css);
+
+:root {
+	--app-bg: url(https://i.imgur.com/cLcYzcE.jpg);
+	--app-blur: 6px;
+	--app-margin: 24px;
+	--app-radius: 8px; /*	-	*/
+	
+	--accent-hue: 212;
+	--accent-saturation: 100%;
+	--accent-lightness: 64%;
+	--accent-opacity: 1;
+	--accent-text-color: #eaf6ff; /*	-	*/
+
+	--sidebar-color: rgba(6,18,38,0.55);
+	--main-content-color: rgba(6,18,38,0.35); /*	-	*/
+
+	--message-color: rgba(6,18,38,0.55);
+	--message-radius: 8px;
+	--message-padding-top: 8px;
+	--message-padding-side: 8px; /*	-	*/
+
+	--mention-hue: 212;
+	--mention-saturation: 100%;
+	--mention-lightness: 64%;
+	--mention-opacity: 1;
+	
+	--reply-hue: 205;
+	--reply-saturation: 100%;
+	--reply-lightness: 65%;
+	--reply-opacity: 1; /*	-	*/
+
+	--textarea-color: 255,255,255;
+	--textarea-alpha: 0.1;
+	--textarea-alpha-focus: 0.15;
+	--textarea-text-color: #fff;
+	--textarea-radius: 22px;  /*	-	*/
+
+	--card-color: rgba(8,22,46,0.55);
+	--card-color-hover: rgba(12,32,64,0.65);
+	--card-color-select: rgba(14,40,80,0.75); /*	-	*/
+	
+	--button-height: 32px;
+	--button-padding: 0 16px;
+	--button-action-color: #000;
+	--button-radius: 16px; /*	-	*/
+
+	--interactive-normal: #9db8d6;
+	--interactive-hover: #cfe8ff;
+	--interactive-active: #ffffff;
+	--interactive-muted: #5a7391; /*	-	*/
+
+	--background-modifier-hover: rgba(0,150,255,0.16);
+	--background-modifier-selected: rgba(0,150,255,0.25);
+}
+
+/* Dark glowy blue accents — slightly bright glow */
+:root {
+	--glow-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.55);
+	--glow-soft: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.35);
+}
+
+/* Subtle blue glow on selected / active / accent elements */
+[class*="selected"] > [class*="link"],
+[class*="modeSelected"] {
+	filter: drop-shadow(0 0 6px var(--glow-soft));
+}
+[class*="unread"] {
+	background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-lightness), 0.9) !important;
+	box-shadow: 0 0 8px 2px var(--glow-color);
+}
+a {
+	text-shadow: 0 0 12px var(--glow-soft);
+}
